@@ -1,0 +1,7 @@
+term21
+*.gz
+*.tar
+*.tar.gz
+*.dll
+*.so
+*.c
