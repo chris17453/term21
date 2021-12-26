@@ -1,0 +1,57 @@
+name: Game
+font_face: Bm437_IBM_VGA9.fd
+font_size: 1
+default_foreground: 15
+default_background: 0
+foreground: 15
+background: 0
+margin:
+  left: 29
+  top: 42
+  right: 25
+  bottom: 25
+text:
+ - name: title
+   value: 'GAME: $TITLE'
+   foreground: 40
+   background: 0
+   x: 55
+   y: 10
+   font_size: 1
+   font_face: Bm437_IBM_VGA9.fd
+ - name: user1
+   value: '$USER1'
+   foreground: 40
+   background: 0
+   x: 55
+   y: 50
+   font_size: 1
+   font_face: Bm437_IBM_VGA9.fd
+texture:
+  - source: game.gif
+    sprite:
+      - name: game
+        depth: -1
+        src_outer:
+          left: 0
+          top: 1
+          right: 156
+          bottom: 107
+        src_inner:
+          left: 77
+          top: 47
+          right: 124
+          bottom: 76
+        dest:
+          left: 0
+          top: 0
+          right: -1
+          bottom: -1
+        rotation: 0
+        copy_mode: slice_9_scale
+        transparent:
+          r: 0
+          g: 0
+          b: 0
+          a: 255
+          index: 0

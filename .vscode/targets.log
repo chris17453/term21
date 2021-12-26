@@ -1,0 +1,394 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.3
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Dec 26 11:55:32 2021
+
+# Variables
+
+# environment
+PROVIDE_FULLSTACK_ACTION = true
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+LMOD_SETTARG_FULL_SUPPORT = no
+# environment
+UUID = 8c6dfce5-eaf5-48d6-8d90-392156b0749d
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e00b5ec7-c8ab-499c-a58b-872eb4379538.sock
+# environment
+VSCODE_CWD = /home/nd
+# environment
+WINDOWPATH = 3
+# environment
+GDM_LANG = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+THREE_SCALE_USER_TOKEN = 207c527cfc2a6b8dcf4fa43ad7a976da
+# environment
+LMOD_ROOT = /usr/share/lmod
+# environment
+GOPATH = /home/nd/go
+# environment
+define BASH_FUNC_which%%
+() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot "$@"
+}
+endef
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/nd/repos/term21
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = radical-edward
+# environment
+MAIL = /var/spool/mail/nd
+# environment
+XDG_DATA_DIRS = /home/nd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/nd/.config/Code/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
+# environment
+SSH_ASKPASS = /usr/libexec/openssh/gnome-ssh-askpass
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LMOD_CMD = /usr/share/lmod/lmod/libexec/lmod
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/nd/repos/term21
+# environment
+define BASH_FUNC_module%%
+() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+endef
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+UTM_SOURCE = vscode
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LMOD_DIR = /usr/share/lmod/lmod/libexec
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+HISTSIZE = 1000
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=5f55e7f5-d750-4217-9f3a-efbc17379d5c&iid=5f55e7f5-d750-4217-9f3a-efbc17379d5c&sid=5f55e7f5-d750-4217-9f3a-efbc17379d5c","uploadToServer":true}
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 11009
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/10276,unix/unix:/tmp/.ICE-unix/10276
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = /usr/share/lmod/lmod/share/man:
+# environment
+MODULEPATH = /etc/modulefiles:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+define BASH_FUNC_ml%%
+() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+endef
+# environment
+BREAKPAD_DUMP_LOCATION = /home/nd/.config/Code/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/nd/.local/bin:/home/nd/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin
+# environment
+MOZ_GMP_PATH = /usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed
+# default
+MAKEFILES := 
+# environment
+MODULESHOME = /usr/share/lmod/lmod
+# automatic
+^F = $(notdir $^)
+# environment
+LMOD_sys = Linux
+# environment
+INVOCATION_ID = 2225bddef3fb4c7fb88e0ee3b397db2d
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = nd
+# environment
+RECOMMENDER_API_URL = https://gw.api.openshift.io//api/v2
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# environment
+KDEDIRS = /usr
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = gnome
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = nd
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile (from 'Makefile', line 13)
+git_username = "Charles Watkins"
+# environment
+BASH_ENV = /usr/share/lmod/lmod/init/bash
+# makefile
+.DEFAULT_GOAL := help
+# environment
+SYSTEMD_EXEC_PID = 10300
+# environment
+MODULEPATH_ROOT = /usr/share/modulefiles
+# environment
+HISTCONTROL = ignoredups
+# environment
+EDITOR = /usr/bin/nano
+# environment
+DISPLAY = :1
+# environment
+USER = nd
+# makefile (from 'Makefile', line 14)
+git_email = "chris@watkinslabs.com"
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 10080
+# environment
+which_declare = declare -f
+# environment
+DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 11009
+# makefile (from 'Makefile', line 11)
+THIS_FILE := Makefile
+# environment
+SSH_AGENT_PID = 10220
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GOMODCACHE = /home/nd/go/pkg/mod
+# environment
+JOURNAL_STREAM = 8:74486
+# environment
+GOLANG_EXECUTABLE = go
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/nd
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-ab55591b-1.63.2-main.sock
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+TELEMETRY_ID = 19ae2c3b-687e-49c6-a96d-8a339da18d1b
+# environment
+LMOD_PKG = /usr/share/lmod/lmod
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+LMOD_VERSION = 8.4.30
+# environment
+GDMSESSION = gnome
+# variable set hash-table stats:
+# Load=131/1024=13%, Rehash=0, Collisions=15/163=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64768, inode 45354507): 21 files, no impossibilities.
+
+# 21 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+ 
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-12-24 10:30:26.042801879
+#  File has been updated.
+#  Successfully updated.
+
+install-all:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	@mkdir -p /etc/term21/
+	@cp assets/themes/ /etc/term21/ -R
+	@cp assets/fonts/ /etc/term21/ -R
+	@cp term21 /usr/bin/
+
+.DEFAULT: help
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+help:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	@ echo " make build          | build it"
+	@ echo " make test           | test it"
+	@ echo ""
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
+	@go build
+
+test: build
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	@./term21  ../ttygif-assets/cast/ls2.cast 
+
+install-user:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 41):
+	@mkdir -p ~/.config/term21/
+	@cp assets/themes/ ~/.config/term21/ -R
+	@cp assets/fonts/ ~/.config/term21/ -R
+	@cp term21 /usr/bin/
+
+.PHONY: build test install-all install-user
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/32=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 32 / storage = 236 B / avg = 7 B
+# current buf: size = 8162 B / used = 236 B / count = 32 / avg = 7 B
+
+# strcache performance: lookups = 50 / hit rate = 36%
+# hash-table stats:
+# Load=32/8192=0%, Rehash=0, Collisions=0/50=0%
+# Finished Make data base on Sun Dec 26 11:55:32 2021
+
+ 

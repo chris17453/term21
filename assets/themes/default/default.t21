@@ -1,0 +1,47 @@
+name: "default"
+font_face: /home/nd/repos/ttygif-assets/fonts/fd/Bm437_IBM_VGA9.fd
+font_size: 1
+default_foreground: 7
+default_background: 0
+foreground: 7
+background: 0
+margin:
+ left: 10
+ top: 10
+ right: 10
+ bottom: 10
+texture:
+    - source: filename.png
+      sprite:
+       - name: tube
+         position:
+           left: 20
+           top: 20
+         source:
+           left:   0
+           top:    0
+           right:  20
+           bottom: 20
+         dimentions:
+           left:   0
+           top:    0
+           right:  20
+           bottom: 20
+         ignore:
+           left:   10
+           top:    10
+           right:  20
+           bottom: 20
+         dest:
+           left:   0
+           top:    0
+           right:  20
+           bottom: 20
+         rotation: 0
+         copy_mode: block
+         transparent:
+           r: 255
+           g: 255
+           b: 255
+           a: 255
+           index: 1

@@ -5,15 +5,16 @@ import (
 	"errors"
 	"fmt"
 	"log"
+
 	"os"
 	"strconv"
 	"strings"
 )
 
 type Rune struct {
-	Width  int
-	Height int
-	Number int
+	Width  int64
+	Height int64
+	Number int64
 	Data   []int
 }
 
@@ -21,16 +22,17 @@ type Font struct {
 	File       string
 	Name       string
 	Copyright  string
-	Pointsize  int
-	Height     int
-	Ascent     int
-	Inleading  int
-	Exleading  int
+	Pointsize  int64
+	Height     int64
+	Width      int64
+	Ascent     int64
+	Inleading  int64
+	Exleading  int64
 	Italic     bool
 	Underline  bool
 	Strikeout  bool
-	Weight     int
-	Charset    int
+	Weight     int64
+	Charset    int64
 	Characters []Rune
 }
 
@@ -72,31 +74,37 @@ func (F *Font) header(key, value string) error {
 		F.Copyright = value
 		break
 	case "POINTSIZE":
-		F.Pointsize, err = strconv.Atoi(value)
+		F.Pointsize, err = strconv.ParseInt(value, 10, 64)
 		if err != nil {
 			return errors.New("Cannot convert pointsize, not an integer")
 		}
 		break
 	case "HEIGHT":
-		F.Height, err = strconv.Atoi(value)
+		F.Height, err = strconv.ParseInt(value, 10, 64)
 		if err != nil {
 			return errors.New("Cannot convert height, not an integer")
 		}
 		break
+	case "WIDTH":
+		F.Width, err = strconv.ParseInt(value, 10, 64)
+		if err != nil {
+			return errors.New("Cannot convert Width, not an integer")
+		}
+		break
 	case "ASCENT":
-		F.Ascent, err = strconv.Atoi(value)
+		F.Ascent, err = strconv.ParseInt(value, 10, 64)
 		if err != nil {
 			return errors.New("Cannot convert ascent, not an integer")
 		}
 		break
 	case "INLEADING":
-		F.Inleading, err = strconv.Atoi(value)
+		F.Inleading, err = strconv.ParseInt(value, 10, 64)
 		if err != nil {
 			return errors.New("Cannot convert inleading, not an integer")
 		}
 		break
 	case "EXLEADING":
-		F.Exleading, err = strconv.Atoi(value)
+		F.Exleading, err = strconv.ParseInt(value, 10, 64)
 		if err != nil {
 			return errors.New("Cannot convert exleading, not an integer")
 		}
@@ -120,13 +128,13 @@ func (F *Font) header(key, value string) error {
 		}
 		break
 	case "WEIGHT":
-		F.Weight, err = strconv.Atoi(value)
+		F.Weight, err = strconv.ParseInt(value, 10, 64)
 		if err != nil {
 			return errors.New("Cannot convert weight, not an integer")
 		}
 		break
 	case "CHARSET":
-		F.Charset, err = strconv.Atoi(value)
+		F.Charset, err = strconv.ParseInt(value, 10, 64)
 		if err != nil {
 			return errors.New("Cannot convert charset, not an integer")
 		}
@@ -147,7 +155,8 @@ func (font *Font) Load(filename string) error {
 	}
 
 	scanner := bufio.NewScanner(stream)
-	var Rune_Number = 0
+	var Rune_Number int64
+	Rune_Number = 0
 	var in_header = true
 
 	// walking the textfile line by line
@@ -176,7 +185,8 @@ func (font *Font) Load(filename string) error {
 			if font.Charset > 0 {
 				in_header = false
 				// resize character set
-				for i := 0; i < font.Charset; i++ {
+				var i int64
+				for i = 0; i < font.Charset; i++ {
 					var nr Rune
 					nr.Number = i
 					font.Characters = append(font.Characters, nr)
@@ -187,7 +197,7 @@ func (font *Font) Load(filename string) error {
 
 			switch key {
 			case "CHAR":
-				Rune_Number, err = strconv.Atoi(value)
+				Rune_Number, err = strconv.ParseInt(value, 10, 64)
 				if err != nil {
 					return errors.New("Cannot convert character index, not an integer")
 				}
@@ -196,7 +206,7 @@ func (font *Font) Load(filename string) error {
 				}
 				break
 			case "WIDTH":
-				font.Characters[Rune_Number].Width, err = strconv.Atoi(value)
+				font.Characters[Rune_Number].Width, err = strconv.ParseInt(value, 10, 64)
 				if err != nil {
 					return errors.New("Cannot convert width index, not an integer")
 				}
@@ -209,7 +219,7 @@ func (font *Font) Load(filename string) error {
 				}
 
 				for pos, n := range value {
-					if pos >= font.Characters[Rune_Number].Width {
+					if int64(pos) >= font.Characters[Rune_Number].Width {
 
 						return errors.New("font character is wider than defined")
 					}
@@ -235,8 +245,19 @@ func (font *Font) Load(filename string) error {
 
 		} //end else
 	} //end for
+
+	// dont trust the width setting, go with the max character width for entire set.. its monospaced right?
+	var max_width int64
+	max_width = 0
+	for _, r := range font.Characters {
+		if r.Width > max_width {
+			max_width = r.Width
+		}
+	}
+	font.Width = max_width
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)
 	}
+	//core.Print(font)
 	return nil
 }

@@ -13,10 +13,10 @@ type Env struct {
 }
 
 type CastHeader struct {
-	Width     int     `json:"width"`
-	Version   int     `json:"version"`
+	Width     int64   `json:"width"`
+	Version   int64   `json:"version"`
 	Title     string  `json:"title"`
-	Height    int     `json:"height"`
+	Height    int64   `json:"height"`
 	Timestamp int64   `json:"timestamp"`
 	Env       Env     `json:"env"`
 	Duration  float64 `json:"duration"`
