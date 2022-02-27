@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Dec 26 11:55:32 2021
+# Make data base, printed on Mon Feb 14 17:55:39 2022
 
 # Variables
 
@@ -27,11 +27,11 @@ UUID = 8c6dfce5-eaf5-48d6-8d90-392156b0749d
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e00b5ec7-c8ab-499c-a58b-872eb4379538.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a88fc979-ee15-4c69-9dd2-60873a86377d.sock
 # environment
 VSCODE_CWD = /home/nd
 # environment
-WINDOWPATH = 3
+WINDOWPATH = 2
 # environment
 GDM_LANG = en_US.UTF-8
 # default
@@ -63,6 +63,8 @@ HOSTNAME = radical-edward
 # environment
 MAIL = /var/spool/mail/nd
 # environment
+STEAM_FRAME_FORCE_CLOSE = 1
+# environment
 XDG_DATA_DIRS = /home/nd/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
@@ -71,7 +73,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/nd/.config/Code/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
+VSCODE_CODE_CACHE_PATH = /home/nd/.config/Code/CachedData/f80445acd5a3dadef24aa209168452a3d97cc326
 # environment
 SSH_ASKPASS = /usr/libexec/openssh/gnome-ssh-askpass
 # environment
@@ -98,7 +100,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 UTM_SOURCE = vscode
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LMOD_DIR = /usr/share/lmod/lmod/libexec
 # environment
@@ -126,13 +128,15 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 11009
+VSCODE_PID = 41674
+# environment
+SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS = 0
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/10276,unix/unix:/tmp/.ICE-unix/10276
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/2958,unix/unix:/tmp/.ICE-unix/2958
 # automatic
 *F = $(notdir $*)
 # environment
@@ -183,7 +187,7 @@ MODULESHOME = /usr/share/lmod/lmod
 # environment
 LMOD_sys = Linux
 # environment
-INVOCATION_ID = 2225bddef3fb4c7fb88e0ee3b397db2d
+INVOCATION_ID = bbd565ed55a940488380ca00c4c744ad
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -215,7 +219,7 @@ BASH_ENV = /usr/share/lmod/lmod/init/bash
 # makefile
 .DEFAULT_GOAL := help
 # environment
-SYSTEMD_EXEC_PID = 10300
+SYSTEMD_EXEC_PID = 2984
 # environment
 MODULEPATH_ROOT = /usr/share/modulefiles
 # environment
@@ -231,17 +235,17 @@ git_email = "chris@watkinslabs.com"
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 10080
+MANAGERPID = 2791
 # environment
 which_declare = declare -f
 # environment
 DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 11009
+GIO_LAUNCHED_DESKTOP_FILE_PID = 41674
 # makefile (from 'Makefile', line 11)
 THIS_FILE := Makefile
 # environment
-SSH_AGENT_PID = 10220
+SSH_AGENT_PID = 2907
 # environment
 _ = /usr/bin/make
 # environment
@@ -249,7 +253,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GOMODCACHE = /home/nd/go/pkg/mod
 # environment
-JOURNAL_STREAM = 8:74486
+JOURNAL_STREAM = 8:42313
 # environment
 GOLANG_EXECUTABLE = go
 # environment
@@ -263,7 +267,7 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-ab55591b-1.63.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-ab55591b-1.64.2-main.sock
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -285,7 +289,7 @@ LMOD_VERSION = 8.4.30
 # environment
 GDMSESSION = gnome
 # variable set hash-table stats:
-# Load=131/1024=13%, Rehash=0, Collisions=15/163=9%
+# Load=133/1024=13%, Rehash=0, Collisions=15/165=9%
 
 # Pattern-specific Variable Values
 
@@ -293,16 +297,16 @@ GDMSESSION = gnome
 
 # Directories
 
-# . (device 64768, inode 45354507): 21 files, no impossibilities.
+ 
+# . (device 64768, inode 45354507): 22 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
- 
 
 # Not a target:
 Makefile:
@@ -383,12 +387,12 @@ install-user:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 32 / storage = 236 B / avg = 7 B
-# current buf: size = 8162 B / used = 236 B / count = 32 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 33 / storage = 248 B / avg = 7 B
+# current buf: size = 8162 B / used = 248 B / count = 33 / avg = 7 B
 
-# strcache performance: lookups = 50 / hit rate = 36%
+# strcache performance: lookups = 51 / hit rate = 35%
 # hash-table stats:
-# Load=32/8192=0%, Rehash=0, Collisions=0/50=0%
-# Finished Make data base on Sun Dec 26 11:55:32 2021
+# Load=33/8192=0%, Rehash=0, Collisions=0/51=0%
+# Finished Make data base on Mon Feb 14 17:55:39 2022
 
  
